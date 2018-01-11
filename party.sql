@@ -34,7 +34,7 @@ CREATE TABLE `friends` (
   `Surname` varchar(30) NOT NULL,
   `Phone_number` varchar(20) NOT NULL,
   `Age` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `friends`
