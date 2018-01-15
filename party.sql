@@ -36,14 +36,6 @@ CREATE TABLE `friends` (
   `Age` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Дамп данных таблицы `friends`
---
-
-INSERT INTO `friends` (`id`, `Name`, `Surname`, `Phone_number`, `Age`) VALUES
-(1, '?????', '??????????', '37122004863', 17),
-(2, '?????', '??????????', '37122004863', 17),
-(3, 'awd', 'awd', '3711231', 12312);
 
 --
 -- Индексы сохранённых таблиц
