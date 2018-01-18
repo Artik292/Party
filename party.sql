@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: localhost
--- Время создания: Янв 11 2018 г., 22:03
+-- Время создания: Янв 18 2018 г., 21:32
 -- Версия сервера: 10.1.21-MariaDB
 -- Версия PHP: 5.6.30
 
@@ -33,9 +33,19 @@ CREATE TABLE `friends` (
   `Name` varchar(20) NOT NULL,
   `Surname` varchar(30) NOT NULL,
   `Phone_number` varchar(20) NOT NULL,
-  `Age` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `Age` enum('14','15','16','17','18','19') NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Дамп данных таблицы `friends`
+--
+
+INSERT INTO `friends` (`id`, `Name`, `Surname`, `Phone_number`, `Age`) VALUES
+(1, '?????', '??????????', '37122004863', '17'),
+(2, '?????', '??????????', '37122004863', '17'),
+(3, 'awd', 'awd', '3711231', ''),
+(4, '?????', '????', '3712312', ''),
+(5, 'test', 'test', '37133', '14');
 
 --
 -- Индексы сохранённых таблиц
@@ -55,7 +65,7 @@ ALTER TABLE `friends`
 -- AUTO_INCREMENT для таблицы `friends`
 --
 ALTER TABLE `friends`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;COMMIT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
