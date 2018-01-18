@@ -14,6 +14,6 @@ class Friend extends \atk4\data\Model {
         $this->addField('name',['caption'=>'Имя','required'=>TRUE]);
         $this->addField('surname',['caption'=>'Фамилия','required'=>TRUE]);
         $this->addField('phone_number',['caption'=>'Номер телефона','required'=>TRUE,'default'=>'+371','type'=>'integer']);
-        $this->addField('age',['caption'=>'Возраст','required'=>TRUE]);
+        $this->addField('age',['caption'=>'Возраст','required'=>TRUE,'enum'=>['14','15','16','17','18','19']]);
     }
 }
