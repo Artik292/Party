@@ -34,18 +34,7 @@ CREATE TABLE `friends` (
   `Surname` varchar(30) NOT NULL,
   `Phone_number` varchar(20) NOT NULL,
   `Age` enum('14','15','16','17','18','19') NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Дамп данных таблицы `friends`
---
-
-INSERT INTO `friends` (`id`, `Name`, `Surname`, `Phone_number`, `Age`) VALUES
-(1, '?????', '??????????', '37122004863', '17'),
-(2, '?????', '??????????', '37122004863', '17'),
-(3, 'awd', 'awd', '3711231', ''),
-(4, '?????', '????', '3712312', ''),
-(5, 'test', 'test', '37133', '14');
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Индексы сохранённых таблиц
