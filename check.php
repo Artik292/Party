@@ -15,7 +15,7 @@ $form->setModel($check);
 $pass = $_ENV['pass'];
 $form->onSubmit(function($form) {
   if ($form->model['password'] == $pass) {
-      $_SESSION['admin_access'] = 'fnupaw39r23rvwefk91248';
+      //$_SESSION['admin_access'] = 'fnupaw39r23rvwefk91248';
       return new \atk4\ui\jsExpression('document.location = "admin.php" ');
   } else {
       //return new \atk4\ui\jsExpression('document.location = "index.php" ');
