@@ -1,5 +1,4 @@
 <?php
-require 'vendor/autoload.php';
 
 if (isset($_ENV['CLEARDB_DATABASE_URL'])) {
      $db = \atk4\data\Persistence::connect($_ENV['CLEARDB_DATABASE_URL']);
