@@ -1,6 +1,7 @@
 <?php
+echo "Hi JohnY";
 
-require 'vendor/autoload.php';
+/*require 'vendor/autoload.php';
 
 session_start();
 
@@ -23,4 +24,4 @@ if (isset($_SESSION['admin_access'])) {
   }
 } else {
   header('Location: index.php');
-}
+} */
