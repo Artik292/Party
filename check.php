@@ -19,6 +19,6 @@ $form->onSubmit(function($form) {
       return new \atk4\ui\jsExpression('document.location = "admin.php" ');
   } else {
       //return new \atk4\ui\jsExpression('document.location = "index.php" ');
-      return new \atk4\ui\jsExpression('document.location = "admin.php" ');
+      return new \atk4\ui\jsExpression('document.location = "check.php" ');
   }
  });
