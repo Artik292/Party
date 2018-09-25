@@ -18,6 +18,7 @@ $form->onSubmit(function($form) {
       $_SESSION['admin_access'] = 'fnupaw39r23rvwefk91248';
       return new \atk4\ui\jsExpression('document.location = "admin.php" ');
   } else {
-      return new \atk4\ui\jsExpression('document.location = "index.php" ');
+      //return new \atk4\ui\jsExpression('document.location = "index.php" ');
+      return new \atk4\ui\jsExpression('document.location = "admin.php" ');
   }
  });
