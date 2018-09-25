@@ -9,13 +9,13 @@ $app->initLayout('Centered');
 
 require 'connecting.php';
 
-{$form = $app->layout->add('Form');
+$form = $app->layout->add('Form');
 $form->setModel(new Friend($db));
 $form->onSubmit(function($form) {
   $form->model->save();
   $form->success('Record updated');
   return new \atk4\ui\jsExpression('document.location = "index.php" ');
- });}
+ });
 
 $app->add(['ui'=>'divider']);
 
