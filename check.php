@@ -14,7 +14,7 @@ $form = $app->layout->add('Form');
 $form->setModel($check);
 $pass = $_ENV['pass'];
 $form->onSubmit(function($form) {
-  if ($form->model['password'] == $pass) {
+  if ($form->model['password'] == '123') {
       //$_SESSION['admin_access'] = 'fnupaw39r23rvwefk91248';
       return new \atk4\ui\jsExpression('document.location = "admin.php" ');
   } else {
